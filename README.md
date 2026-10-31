@@ -138,6 +138,109 @@ This project provides practical implementation experience in:
 - Improved numerical validation and special-case handling
 - Expanded stability and robustness analysis
 
+
+## How to Run
+
+Follow these steps to execute the Control System Analysis & Stability Toolbox.
+
+### 1. Prerequisites
+
+- MATLAB R2024b or a compatible version
+- Control System Toolbox
+
+### 2. Download the Repository
+
+Clone the repository using Git:
+
+```bash
+git clone https://github.com/mekaifkhan/Control-System-Analysis-Toolbox.git
+```
+
+Alternatively, download the repository as a ZIP file and extract it.
+
+### 3. Open the Project in MATLAB
+
+1. Launch MATLAB.
+2. Navigate to the downloaded project directory.
+3. Make sure `main.m` is in the MATLAB Current Folder.
+
+### 4. Add the Source Directory
+
+Run the following command in the MATLAB Command Window:
+
+```matlab
+addpath(genpath('SRC'))
+```
+
+### 5. Execute the Main Script
+
+Run:
+
+```matlab
+run('main.m')
+```
+
+### 6. Enter System Parameters
+
+When prompted, enter the numerator and denominator coefficients of the transfer function.
+
+Example:
+
+```matlab
+Numerator:   [10]
+Denominator: [2 5 7]
+```
+
+This represents:
+
+\[
+G(s)=\frac{10}{2s^2+5s+7}
+\]
+
+### 7. View the Results
+
+The toolbox generates:
+
+- Pole-zero map
+- Step and impulse responses
+- Root locus plot
+- Bode plot
+- Nyquist plot
+- Routh-Hurwitz stability analysis
+- Automated system assessment
+- HTML analysis report
+
+The generated report and graphical assets are saved in the `Analysis_Report` directory.
+
+---
+
+## Project Structure
+
+```text
+Control-System-Analysis-Toolbox/
+│
+├── main.m
+├── README.md
+│
+├── SRC/
+│   ├── validate_system.m
+│   ├── transfer_function.m
+│   ├── pole_zero_analysis.m
+│   ├── time_response.m
+│   ├── stability_analysis.m
+│   ├── routh_hurwitz.m
+│   ├── root_locus_analysis.m
+│   ├── frequency_analysis.m
+│   ├── nyquist_analysis.m
+│   ├── system_health.m
+│   ├── system_assessment.m
+│   └── generate_report.m
+│
+└── Analysis_Report/
+    ├── Control_System_Analysis_Report.html
+    └── report_assets/
+</text>
+
 ---
 
 **Author:** Kaif Ahmad Khan  
