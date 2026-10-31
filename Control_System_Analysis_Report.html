@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control System Analysis Report</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;color: #263238;margin: 35px auto;max-width: 950px;padding: 25px;line-height: 1.55;}
+h1 {color:#17365D;text-align:center;font-size:30px;}
+h2 {color:#17365D;border-bottom:2px solid #d8e1ed;padding-bottom:7px;margin-top:30px;}
+h3 {color:#263238;margin-bottom:12px;}
+table {width:100%;border-collapse:collapse;margin:15px 0 22px 0;}
+th,td {border:1px solid #bfc7ce;padding:10px;text-align:left;}
+th {background:#eaf0f6;color:#17365D;}
+tr {page-break-inside:avoid;break-inside:avoid;}
+.cover {text-align:center;margin-top:65px;margin-bottom:75px;}
+.subtitle {font-size:19px;font-weight:bold;}
+.meta {color:#555;margin:8px;}
+.transfer {text-align:center;padding:20px;margin:15px 0 25px 0;background:#f1f5f9;border-radius:6px;font-size:20px;font-weight:bold;}
+.status {color:#176b45;font-weight:bold;}
+.plot-section {margin:25px 0 35px 0;page-break-inside:avoid;break-inside:avoid;}
+.plot-section h3 {page-break-after:avoid;break-after:avoid;}
+.plot-section img {width:100%;height:auto;max-height:6.2in;object-fit:contain;display:block;margin:0 auto;border:1px solid #e0e0e0;}
+.footer {margin-top:50px;padding-top:15px;border-top:2px solid #aaa;color:#666;}
+@media print {body {max-width:none;margin:10mm;padding:0;}.plot-section {page-break-inside:avoid;break-inside:avoid;}h2 {page-break-after:avoid;break-after:avoid;}}
+</style>
+</head>
+<body>
+<div class="cover">
+<h1>CONTROL SYSTEM ANALYSIS REPORT</h1><p class="subtitle">Control System Analysis &amp; Stability Toolbox</p><p>Developed by <b>Kaif Ahmad Khan</b></p><p class="meta">Electronics and Communication Engineering</p><p class="meta">Jamia Millia Islamia</p><p class="meta">Generated: 31-Oct-2026 19:36:33</p></div>
+<h2>1. System Information</h2><table><tr><th>Parameter</th><th>Value</th></tr><tr><td>System Type</td><td>Continuous-time LTI</td></tr><tr><td>System Order</td><td>2</td></tr><tr><td>Numerator</td><td>10</td></tr><tr><td>Denominator</td><td>[2 5 6]</td></tr></table><h3>Transfer Function</h3><div class="transfer">G(s) = (10) / (2 s^2 + 5 s + 6)</div><h2>2. Pole-Zero Analysis</h2><table><tr><th>Parameter</th><th>Result</th></tr><tr><td>Poles</td><td>[-1.25+1.199i;-1.25-1.199i]</td></tr><tr><td>Zeros</td><td>No finite zeros</td></tr><tr><td>Pole Stability</td><td>STABLE</td></tr></table><h2>3. Routh-Hurwitz Stability Analysis</h2><p>Routh Stability: <b>STABLE</b></p><p>First-column sign changes: 0</p><table><tr><th>Column 1</th><th>Column 2</th></tr><tr><td>2</td><td>6</td></tr><tr><td>5</td><td>0</td></tr><tr><td>6</td><td>0</td></tr></table><h2>4. Time-Domain Performance</h2><table><tr><th>Parameter</th><th>Value</th></tr><tr><td>Rise Time</td><td>1.267 s</td></tr><tr><td>Settling Time</td><td>3.4153 s</td></tr><tr><td>Peak Time</td><td>2.6157 s</td></tr><tr><td>Peak Value</td><td>1.7297</td></tr><tr><td>Overshoot</td><td>3.7803 %</td></tr><tr><td>Final Value</td><td>1.6667</td></tr></table><h2>5. Frequency-Domain Performance</h2><table><tr><th>Parameter</th><th>Value</th></tr><tr><td>Gain Margin</td><td>Infinite dB</td></tr><tr><td>Phase Margin</td><td>79.899 degrees</td></tr><tr><td>Gain Crossover Frequency</td><td>No finite crossover</td></tr><tr><td>Phase Crossover Frequency</td><td>1.969 rad/s</td></tr></table><h2>6. Engineering Assessment</h2><p>Pole-based stability: <b>STABLE</b></p><p>Routh-Hurwitz result: <b>STABLE</b></p><p class="status">Overall Assessment: STABLE</p><p>These results summarize the mathematical stability and performance indicators calculated by the toolbox. Design suitability should be assessed against application requirements and engineering specifications.</p><h2>7. Analysis Plots</h2><div class="plot-section"><h3>Nyquist Plot</h3><img src="report_assets/plot_01.png" alt="Nyquist Plot"></div><div class="plot-section"><h3>Bode Plot</h3><img src="report_assets/plot_02.png" alt="Bode Plot"></div><div class="plot-section"><h3>Root Locus</h3><img src="report_assets/plot_03.png" alt="Root Locus"></div><div class="plot-section"><h3>Impulse Response</h3><img src="report_assets/plot_04.png" alt="Impulse Response"></div><div class="plot-section"><h3>Step Response</h3><img src="report_assets/plot_05.png" alt="Step Response"></div><div class="plot-section"><h3>Pole-Zero Map</h3><img src="report_assets/plot_06.png" alt="Pole-Zero Map"></div><div class="footer"><p>Generated automatically by Control System Analysis Toolbox.</p><p>Developed by Kaif Ahmad Khan | Jamia Millia Islamia</p></div></body>
+</html>
